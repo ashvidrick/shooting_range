@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="External Library">
+      <UniqueIdentifier>{64f1320f-0d23-4d89-a5ad-a7c4e6b73d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML">
+      <UniqueIdentifier>{e82d7052-bab4-4ea3-ad52-2b52f545aaf3}</UniqueIdentifier>
+    </Filter>
+    <!-- SFML headers -->
+    <Filter Include="External Library\SFML\Headers">
+      <UniqueIdentifier>{a4bf057c-f125-4ebc-afc5-9da468ae6004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Headers\Audio">
+      <UniqueIdentifier>{37716f5d-0f9b-4960-95cd-eabe26525e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Headers\Graphics">
+      <UniqueIdentifier>{88f408c6-ab7f-4740-9739-5172d6408ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Headers\Network">
+      <UniqueIdentifier>{0d0bc58c-e9d1-4c34-a543-d788d3ec282d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Headers\System">
+      <UniqueIdentifier>{2e288e5a-eb1a-4bbb-a927-2a29da17d3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Headers\Window">
+      <UniqueIdentifier>{879b6ec9-1ada-4eca-adc6-f437df23703d}</UniqueIdentifier>
+    </Filter>
+    <!-- Extra headers -->
+    <!-- Dynamic library -->
+    <Filter Include="External Library\SFML\Dynamic Library">
+      <UniqueIdentifier>{a3b3478a-d964-4b26-acb2-e5f7552ee6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\dll">
+      <UniqueIdentifier>{94fd70f6-4c9c-4fb1-83ea-59c75a00ee3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\dll\x86">
+      <UniqueIdentifier>{92bc9cc5-a219-403a-8635-306ba8899694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\dll\x86\debug">
+      <UniqueIdentifier>{8cfeb1dc-e81d-49ab-9ed4-99964c1e8709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\dll\x64">
+      <UniqueIdentifier>{ef59e3b8-9085-4c71-ac23-d952a11b4e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\dll\x64\debug">
+      <UniqueIdentifier>{3b013751-16ea-45ae-be63-c34bbde6ecdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\lib">
+      <UniqueIdentifier>{7cc9f0bd-7613-4a9e-b6f6-80b41f1268b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\lib\x86">
+      <UniqueIdentifier>{196db1d0-2d56-4069-ba98-2916cdde71eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\lib\x86\debug">
+      <UniqueIdentifier>{fc2e3afd-a2a2-4d5c-b08b-1345070389d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\lib\x64">
+      <UniqueIdentifier>{714eaf05-d7ba-4bd3-ab7e-f5a8215028ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\lib\x64\debug">
+      <UniqueIdentifier>{086fd279-3eaa-41c7-94fd-dbed577d6d01}</UniqueIdentifier>
+    </Filter>
+    <!-- Dynamic PDB's -->
+    <Filter Include="External Library\SFML\Dynamic Library\pdb">
+      <UniqueIdentifier>{4ee6a153-c207-4eb5-a9d5-63ca8d3ef789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\pdb\x86">
+      <UniqueIdentifier>{12707791-ef6b-4299-a116-1fe780c21843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Dynamic Library\pdb\x64">
+      <UniqueIdentifier>{20198f02-261b-4ccb-a2c6-d60a46281f4c}</UniqueIdentifier>
+    </Filter>
+    <!-- Static library -->
+    <Filter Include="External Library\SFML\Static Library">
+      <UniqueIdentifier>{a6572226-d808-4689-99eb-26a64c3482d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\lib">
+      <UniqueIdentifier>{fdb4fa2d-ca6c-4f3a-9163-331d5ed7a6ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\lib\x86">
+      <UniqueIdentifier>{a7017534-44e7-47b1-8f64-e1b455c90365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\lib\x86\debug">
+      <UniqueIdentifier>{631f2e1a-31a8-4646-98c0-8cfd70449c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\lib\x64">
+      <UniqueIdentifier>{3af2b29e-a7e0-4956-8dda-ca6e2054a20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\lib\x64\debug">
+      <UniqueIdentifier>{a4342ea0-6112-4f41-9518-6ad943797dce}</UniqueIdentifier>
+    </Filter>
+    <!-- Static PDB's -->
+    <Filter Include="External Library\SFML\Static Library\pdb">
+      <UniqueIdentifier>{4accb39d-9899-4ae2-8fe3-00a6072f9aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\pdb\x86">
+      <UniqueIdentifier>{a1972b7d-0ddc-4675-9e08-ad37ca1f5a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\SFML\Static Library\pdb\x64">
+      <UniqueIdentifier>{f0e24c23-f55f-44cb-a003-ae2e68bb0edd}</UniqueIdentifier>
+    </Filter>
+    <!-- other LIB's -->
+    <Filter Include="External Library\other">
+      <UniqueIdentifier>{430bdd33-6009-4995-a537-97e18e8682c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\other\lib">
+      <UniqueIdentifier>{FA13BF01-3B24-45A0-BBD5-3A9C658DCCEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\other\lib\x86">
+      <UniqueIdentifier>{a8f7f82a-b238-4471-bc36-e2b6a82e2ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\other\lib\x86\debug">
+      <UniqueIdentifier>{0d3f889f-f276-4cf7-b2a1-8ae0d9282596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\other\lib\x64">
+      <UniqueIdentifier>{f21aa704-3116-4c76-8f1b-f0ba7d5b07a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Library\other\lib\x64\debug">
+      <UniqueIdentifier>{6b022419-7e65-492d-97b8-9bed1b2fc40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project Header Files">
+      <UniqueIdentifier>{4e4c946c-aa5e-4589-9c3f-e3147c096776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Resource Files">
+      <UniqueIdentifier>{6457483e-9630-4a93-a305-ff4e60fc4b2c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\Score.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\SettingManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\SoundManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\Target.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SOURCE\Tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Extra libs -->
+    <!-- release x86 -->
+    <None Include="lib\x86\freetype.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\flac.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\ogg.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\vorbis.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\vorbisenc.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\vorbisfile.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\harfbuzz.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\libssh2.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\mbedcrypto.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\mbedtls.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\mbedx509.lib">
+      <Filter>External Library\other\lib\x86</Filter>
+    </None>
+    <!-- debug x86 -->
+    <None Include="lib\x86\freetyped.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\flacd.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\oggd.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\vorbisd.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\vorbisencd.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\vorbisfiled.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\harfbuzzd.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\mbedcryptod.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\mbedtlsd.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\mbedx509d.lib">
+      <Filter>External Library\other\lib\x86\debug</Filter>
+    </None>
+    <!-- release x64 -->
+    <None Include="lib\x64\freetype.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\flac.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\ogg.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\vorbis.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\vorbisenc.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\vorbisfile.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\harfbuzz.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\libssh2.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\mbedcrypto.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\mbedtls.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\mbedx509.lib">
+      <Filter>External Library\other\lib\x64</Filter>
+    </None>
+    <!-- debug x64 -->
+    <None Include="lib\x64\harfbuzzd.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\mbedcryptod.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\mbedtlsd.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\mbedx509d.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\freetyped.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\flacd.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\oggd.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\vorbisd.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\vorbisencd.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\vorbisfiled.lib">
+      <Filter>External Library\other\lib\x64\debug</Filter>
+    </None>
+    <!-- SFML3 -->
+    <!-- Dynamic libs x86 -->
+    <None Include="lib\x86\sfml-main.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-audio.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-graphics.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-system.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-network.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-window.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86</Filter>
+    </None>
+    <!-- Dynamic debug libs x86 -->
+    <None Include="lib\x86\sfml-main-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-audio-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-graphics-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-network-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-system-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-window-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x86\debug</Filter>
+    </None>
+    <!-- Static libs x86 -->
+    <None Include="lib\x86\sfml-audio-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-graphics-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-network-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-system-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-window-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86</Filter>
+    </None>
+    <!-- Static debug libs x86 -->
+    <None Include="lib\x86\sfml-audio-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-graphics-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-network-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-system-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86\debug</Filter>
+    </None>
+    <None Include="lib\x86\sfml-window-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x86\debug</Filter>
+    </None>
+    <!-- Dynamic libs x64 -->
+    <None Include="lib\x64\sfml-main.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-audio.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-graphics.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-system.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-network.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-window.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64</Filter>
+    </None>
+    <!-- Dynamic debug libs x64 -->
+    <None Include="lib\x64\sfml-main-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-audio-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-graphics-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-network-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-system-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-window-d.lib">
+      <Filter>External Library\SFML\Dynamic Library\lib\x64\debug</Filter>
+    </None>
+    <!-- Static libs x64 -->
+    <None Include="lib\x64\sfml-audio-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-graphics-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-network-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-system-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-window-s.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64</Filter>
+    </None>
+    <!-- Static debug libs x64 -->
+    <None Include="lib\x64\sfml-audio-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-graphics-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-network-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-system-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64\debug</Filter>
+    </None>
+    <None Include="lib\x64\sfml-window-s-d.lib">
+      <Filter>External Library\SFML\Static Library\lib\x64\debug</Filter>
+    </None>
+    <!-- PDB's -->
+    <!-- dynamic debug x86 -->
+    <None Include="lib\x86\sfml-main-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-audio-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-graphics-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-network-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-system-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-window-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x86</Filter>
+    </None>
+    <!-- static debug x86 -->
+    <None Include="lib\x86\sfml-audio-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-graphics-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-network-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-system-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x86</Filter>
+    </None>
+    <None Include="lib\x86\sfml-window-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x86</Filter>
+    </None>
+    <!-- dynamic debug x64 -->
+    <None Include="lib\x64\sfml-main-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-audio-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-graphics-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-network-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-system-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-window-d.pdb">
+      <Filter>External Library\SFML\Dynamic Library\pdb\x64</Filter>
+    </None>
+    <!-- static debug x64 -->
+    <None Include="lib\x64\sfml-audio-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-graphics-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-network-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-system-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x64</Filter>
+    </None>
+    <None Include="lib\x64\sfml-window-s-d.pdb">
+      <Filter>External Library\SFML\Static Library\pdb\x64</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- SFML3 Main headers -->
+    <ClInclude Include="include\SFML\Audio.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Config.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\GpuPreference.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Main.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\OpenGL.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window.hpp">
+      <Filter>External Library\SFML\Headers</Filter>
+    </ClInclude>
+    <!-- Audio headers -->
+    <ClInclude Include="include\SFML\Audio\AudioResource.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Export.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\InputSoundFile.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Listener.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Music.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\OutputSoundFile.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\PlaybackDevice.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\Sound.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundChannel.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundBuffer.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundBufferRecorder.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundFileFactory.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundFileReader.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundFileWriter.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundRecorder.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundSource.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundStream.hpp">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Audio\SoundFileFactory.inl">
+      <Filter>External Library\SFML\Headers\Audio</Filter>
+    </ClInclude>
+    <!-- Graphics headers -->
+    <ClInclude Include="include\SFML\Graphics\BlendMode.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\CircleShape.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Color.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Color.inl">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\CoordinateType.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\ConvexShape.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Font.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Glsl.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Image.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\PrimitiveType.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RectangleShape.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderStates.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTexture.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Shader.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\StencilMode.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Text.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transform.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transform.inl">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transformable.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Vertex.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\VertexArray.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\VertexBuffer.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\View.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Texture.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Glsl.inl">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Rect.inl">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Export.hpp">
+      <Filter>External Library\SFML\Headers\Graphics</Filter>
+    </ClInclude>
+    <!-- Network headers -->
+    <ClInclude Include="include\SFML\Network\Ftp.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Http.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\IpAddress.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Packet.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Socket.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\SocketHandle.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\SocketSelector.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\TcpListener.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\TcpSocket.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\UdpSocket.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Export.hpp">
+      <Filter>External Library\SFML\Headers\Network</Filter>
+    </ClInclude>
+    <!-- System headers -->
+    <ClInclude Include="include\SFML\System\Angle.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Angle.inl">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Clock.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Err.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Exception.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\FileInputStream.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\InputStream.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\MemoryInputStream.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\NativeActivity.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Sleep.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\String.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Utf.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Vector2.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Vector3.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\SuspendAwareClock.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Time.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Time.inl">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Vector2.inl">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Vector3.inl">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Utf.inl">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\String.inl">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Export.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\TimeoutWithPredicate.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\System\Version.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Dns.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Network\Sftp.hpp">
+      <Filter>External Library\SFML\Headers\System</Filter>
+    </ClInclude>
+    <!-- Window headers -->
+    <ClInclude Include="include\SFML\Window\Clipboard.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Context.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\ContextSettings.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Cursor.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Event.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Event.inl">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\GlResource.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Joystick.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Keyboard.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Mouse.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Sensor.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Touch.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\VideoMode.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Vulkan.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Window.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowBase.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowBase.inl">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowEnums.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\WindowHandle.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Window\Export.hpp">
+      <Filter>External Library\SFML\Headers\Window</Filter>
+    </ClInclude>
+    <!-- mbedtls -->
+    <!-- PSA -->
+    <ClInclude Include="INCLUDE\SettingsManager.h">
+      <Filter>Project Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INCLUDE\Game.h">
+      <Filter>Project Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INCLUDE\Score.h">
+      <Filter>Project Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INCLUDE\SoundManager.h">
+      <Filter>Project Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INCLUDE\tools.h">
+      <Filter>Project Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INCLUDE\Target.h">
+      <Filter>Project Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- x86 release -->
+    <ContentWithTargetPath Include="bin\x86\sfml-audio-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-graphics-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-network-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-system-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-window-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86</Filter>
+    </ContentWithTargetPath>
+    <!-- x86 debug -->
+    <ContentWithTargetPath Include="bin\x86\sfml-audio-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-graphics-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-network-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-system-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-window-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x86\debug</Filter>
+    </ContentWithTargetPath>
+    <!-- x64 release -->
+    <ContentWithTargetPath Include="bin\x64\sfml-audio-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-graphics-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-network-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-system-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-window-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64</Filter>
+    </ContentWithTargetPath>
+    <!-- x64 debug -->
+    <ContentWithTargetPath Include="bin\x64\sfml-audio-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-graphics-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-network-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-system-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64\debug</Filter>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-window-d-3.dll">
+      <Filter>External Library\SFML\Dynamic Library\dll\x64\debug</Filter>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="resources\arial.ttf">
+      <Filter>Game Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\background-001.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\background.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\crosshair-001.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\crosshair-002.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\crosshair.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\target-001.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\target-002.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\target.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\hit.wav">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\shoot.wav">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\settings.ini">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug (Dynamic)|Win32">
+      <Configuration>Debug (Dynamic)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Dynamic)|Win32">
+      <Configuration>Release (Dynamic)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (Static)|Win32">
+      <Configuration>Debug (Static)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Static)|Win32">
+      <Configuration>Release (Static)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (Dynamic)|x64">
+      <Configuration>Debug (Dynamic)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Dynamic)|x64">
+      <Configuration>Release (Dynamic)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug (Static)|x64">
+      <Configuration>Debug (Static)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release (Static)|x64">
+      <Configuration>Release (Static)</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4655E034-C10B-1C45-A0FE-86C4F933181F}</ProjectGuid>
+    <RootNamespace>SFML302</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x86_dynamic_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x86_dynamic</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x86_static_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x86_static</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x64_dynamic_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x64_dynamic</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x64_static_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">
+    <OutDir>$(SolutionDir)\Build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Temp\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_x64_static</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-s-d.lib;freetyped.lib;sfml-window-s-d.lib;gdi32.lib;OpenGL32.lib;sfml-network-s-d.lib;ws2_32.lib;sfml-audio-s-d.lib;vorbisd.lib;vorbisfiled.lib;vorbisencd.lib;flacd.lib;oggd.lib;sfml-system-s-d.lib;winmm.lib;harfbuzzd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-s-d.lib;freetyped.lib;sfml-window-s-d.lib;gdi32.lib;OpenGL32.lib;sfml-network-s-d.lib;ws2_32.lib;sfml-audio-s-d.lib;vorbisd.lib;vorbisfiled.lib;vorbisencd.lib;flacd.lib;oggd.lib;sfml-system-s-d.lib;winmm.lib;harfbuzzd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;OpenGL32.lib;sfml-network-d.lib;sfml-audio-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;OpenGL32.lib;sfml-network-d.lib;sfml-audio-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics-s.lib;freetype.lib;sfml-window-s.lib;gdi32.lib;OpenGL32.lib;sfml-network-s.lib;ws2_32.lib;sfml-audio-s.lib;vorbis.lib;vorbisfile.lib;vorbisenc.lib;flac.lib;ogg.lib;sfml-system-s.lib;winmm.lib;harfbuzz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics-s.lib;freetype.lib;sfml-window-s.lib;gdi32.lib;OpenGL32.lib;sfml-network-s.lib;ws2_32.lib;sfml-audio-s.lib;vorbis.lib;vorbisfile.lib;vorbisenc.lib;flac.lib;ogg.lib;sfml-system-s.lib;winmm.lib;harfbuzz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics.lib;sfml-window.lib;OpenGL32.lib;sfml-network.lib;sfml-audio.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-main.lib;sfml-graphics.lib;sfml-window.lib;OpenGL32.lib;sfml-network.lib;sfml-audio.lib;sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SOURCE\Game.cpp" />
+    <ClCompile Include="SOURCE\main.cpp" />
+    <ClCompile Include="SOURCE\Score.cpp" />
+    <ClCompile Include="SOURCE\SettingManager.cpp" />
+    <ClCompile Include="SOURCE\SoundManager.cpp" />
+    <ClCompile Include="SOURCE\Target.cpp" />
+    <ClCompile Include="SOURCE\Tools.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Extra libs -->
+    <!-- x86 -->
+    <None Include="lib\x86\freetype.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\freetyped.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\flac.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\flacd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\ogg.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\oggd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\vorbis.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\vorbisd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\vorbisenc.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\vorbisencd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\vorbisfile.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\vorbisfiled.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\harfbuzz.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\harfbuzzd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\libssh2.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\mbedcrypto.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\mbedcryptod.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\mbedtls.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\mbedtlsd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\mbedx509.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\mbedx509d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <!-- x64 -->
+    <None Include="lib\x64\freetype.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\freetyped.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\flac.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\flacd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\ogg.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\oggd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\vorbis.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\vorbisd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\vorbisenc.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\vorbisencd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\vorbisfile.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\vorbisfiled.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\harfbuzz.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\harfbuzzd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\libssh2.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\mbedcrypto.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\mbedcryptod.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\mbedtls.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\mbedtlsd.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\mbedx509.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\mbedx509d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <!-- SFML3 LIB's -->
+    <!-- x86 -->
+    <None Include="lib\x86\sfml-main.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-main-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-audio-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-audio-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-audio-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-audio.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-graphics-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-graphics-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-graphics-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-graphics.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-network.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-network-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-network-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-network-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-system.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-system-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-system-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-system-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-window.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-window-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-window-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-window-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <!-- x64 -->
+    <None Include="lib\x64\sfml-main.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-main-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-audio-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-audio-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-audio-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-audio.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-graphics-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-graphics-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-graphics-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-graphics.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-network.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-network-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-network-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-network-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-system.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-system-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-system-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-system-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-window.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-window-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-window-s.lib">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-window-s-d.lib">
+      <FileType>Document</FileType>
+    </None>
+    <!-- SFML3 PDB's -->
+    <!-- x86 -->
+    <None Include="lib\x86\sfml-main-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-audio-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-audio-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-graphics-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-graphics-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-network-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-network-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-system-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-system-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-window-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x86\sfml-window-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <!-- x64 -->
+    <None Include="lib\x64\sfml-main-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-audio-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-audio-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-graphics-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-graphics-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-network-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-network-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-system-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-system-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-window-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="lib\x64\sfml-window-s-d.pdb">
+      <FileType>Document</FileType>
+    </None>
+    <CopyFileToFolders Include="resources\settings.ini">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- x86 -->
+    <ContentWithTargetPath Include="bin\x86\sfml-audio-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-audio-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-audio-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-audio-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-graphics-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-graphics-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-graphics-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-graphics-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-network-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-network-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-network-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-network-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-system-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-system-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-system-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-system-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-window-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-window-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x86\sfml-window-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-window-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <!-- x64 -->
+    <ContentWithTargetPath Include="bin\x64\sfml-audio-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-audio-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-audio-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-audio-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-graphics-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-graphics-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-graphics-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-graphics-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-network-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-network-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-network-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-network-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-system-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-system-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-system-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-system-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-window-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-window-3.dll</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="bin\x64\sfml-window-d-3.dll">
+      <FileType>Document</FileType>
+      <CopyToOutputDirectory Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>sfml-window-d-3.dll</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="INCLUDE\Game.h" />
+    <ClInclude Include="INCLUDE\Score.h" />
+    <ClInclude Include="INCLUDE\SettingsManager.h" />
+    <ClInclude Include="include\SFML\Main.hpp" />
+    <ClInclude Include="include\SFML\Config.hpp" />
+    <ClInclude Include="include\SFML\GpuPreference.hpp" />
+    <ClInclude Include="include\SFML\OpenGL.hpp" />
+    <ClInclude Include="include\SFML\Audio.hpp" />
+    <ClInclude Include="include\SFML\Graphics.hpp" />
+    <ClInclude Include="include\SFML\Network.hpp" />
+    <ClInclude Include="include\SFML\System.hpp" />
+    <ClInclude Include="include\SFML\Window.hpp" />
+    <!-- Audio -->
+    <ClInclude Include="include\SFML\Audio\AudioResource.hpp" />
+    <ClInclude Include="include\SFML\Audio\Export.hpp" />
+    <ClInclude Include="include\SFML\Audio\InputSoundFile.hpp" />
+    <ClInclude Include="include\SFML\Audio\Listener.hpp" />
+    <ClInclude Include="include\SFML\Audio\Music.hpp" />
+    <ClInclude Include="include\SFML\Audio\OutputSoundFile.hpp" />
+    <ClInclude Include="include\SFML\Audio\PlaybackDevice.hpp" />
+    <ClInclude Include="include\SFML\Audio\Sound.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundBuffer.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundChannel.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundFileFactory.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundFileFactory.inl" />
+    <ClInclude Include="include\SFML\Audio\SoundFileReader.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundFileWriter.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundRecorder.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundSource.hpp" />
+    <ClInclude Include="include\SFML\Audio\SoundStream.hpp" />
+    <!-- Graphics -->
+    <ClInclude Include="include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Color.inl" />
+    <ClInclude Include="include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\CoordinateType.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Glsl.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Glsl.inl" />
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Rect.inl" />
+    <ClInclude Include="include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="include\SFML\Graphics\StencilMode.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Transform.inl" />
+    <ClInclude Include="include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="include\SFML\Graphics\VertexBuffer.hpp" />
+    <ClInclude Include="include\SFML\Graphics\View.hpp" />
+    <!-- Network -->
+    <ClInclude Include="include\SFML\Network\Export.hpp" />
+    <ClInclude Include="include\SFML\Network\Ftp.hpp" />
+    <ClInclude Include="include\SFML\Network\Http.hpp" />
+    <ClInclude Include="include\SFML\Network\IpAddress.hpp" />
+    <ClInclude Include="include\SFML\Network\Packet.hpp" />
+    <ClInclude Include="include\SFML\Network\Socket.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketHandle.hpp" />
+    <ClInclude Include="include\SFML\Network\SocketSelector.hpp" />
+    <ClInclude Include="include\SFML\Network\TcpListener.hpp" />
+    <ClInclude Include="include\SFML\Network\TcpSocket.hpp" />
+    <ClInclude Include="include\SFML\Network\UdpSocket.hpp" />
+    <ClInclude Include="include\SFML\Network\Dns.hpp" />
+    <ClInclude Include="include\SFML\Network\Sftp.hpp" />
+    <!-- System -->
+    <ClInclude Include="include\SFML\System\Angle.hpp" />
+    <ClInclude Include="include\SFML\System\Angle.inl" />
+    <ClInclude Include="include\SFML\System\Clock.hpp" />
+    <ClInclude Include="include\SFML\System\Err.hpp" />
+    <ClInclude Include="include\SFML\System\Exception.hpp" />
+    <ClInclude Include="include\SFML\System\Export.hpp" />
+    <ClInclude Include="include\SFML\System\FileInputStream.hpp" />
+    <ClInclude Include="include\SFML\System\InputStream.hpp" />
+    <ClInclude Include="include\SFML\System\MemoryInputStream.hpp" />
+    <ClInclude Include="include\SFML\System\NativeActivity.hpp" />
+    <ClInclude Include="include\SFML\System\Sleep.hpp" />
+    <ClInclude Include="include\SFML\System\String.hpp" />
+    <ClInclude Include="include\SFML\System\String.inl" />
+    <ClInclude Include="include\SFML\System\SuspendAwareClock.hpp" />
+    <ClInclude Include="include\SFML\System\Time.hpp" />
+    <ClInclude Include="include\SFML\System\Time.inl" />
+    <ClInclude Include="include\SFML\System\Utf.hpp" />
+    <ClInclude Include="include\SFML\System\Utf.inl" />
+    <ClInclude Include="include\SFML\System\Vector2.hpp" />
+    <ClInclude Include="include\SFML\System\Vector2.inl" />
+    <ClInclude Include="include\SFML\System\Vector3.hpp" />
+    <ClInclude Include="include\SFML\System\Vector3.inl" />
+    <ClInclude Include="include\SFML\System\TimeoutWithPredicate.hpp" />
+    <ClInclude Include="include\SFML\System\Version.hpp" />
+    <!-- Window -->
+    <ClInclude Include="include\SFML\Window\Clipboard.hpp" />
+    <ClInclude Include="include\SFML\Window\Context.hpp" />
+    <ClInclude Include="include\SFML\Window\ContextSettings.hpp" />
+    <ClInclude Include="include\SFML\Window\Cursor.hpp" />
+    <ClInclude Include="include\SFML\Window\Event.hpp" />
+    <ClInclude Include="include\SFML\Window\Event.inl" />
+    <ClInclude Include="include\SFML\Window\Export.hpp" />
+    <ClInclude Include="include\SFML\Window\GlResource.hpp" />
+    <ClInclude Include="include\SFML\Window\Joystick.hpp" />
+    <ClInclude Include="include\SFML\Window\Keyboard.hpp" />
+    <ClInclude Include="include\SFML\Window\Mouse.hpp" />
+    <ClInclude Include="include\SFML\Window\Sensor.hpp" />
+    <ClInclude Include="include\SFML\Window\Touch.hpp" />
+    <ClInclude Include="include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="include\SFML\Window\Vulkan.hpp" />
+    <ClInclude Include="include\SFML\Window\Window.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowBase.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowBase.inl" />
+    <ClInclude Include="include\SFML\Window\WindowEnums.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowHandle.hpp" />
+    <!-- Extra 3.1.0 - SSH2 -->
+    <!-- Extra 3.1.0 - PSA -->
+    <!-- Extra 3.1.0 - mbedtls -->
+    <ClInclude Include="INCLUDE\SoundManager.h" />
+    <ClInclude Include="INCLUDE\Target.h" />
+    <ClInclude Include="INCLUDE\tools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="resources\background-001.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\background.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\crosshair-001.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\crosshair-002.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\crosshair.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\target-001.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\target-002.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\target.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="resources\arial.ttf">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="resources\hit.wav">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="resources\shoot.wav">
+      <FileType>Document</FileType>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|Win32'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Static)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release (Dynamic)|x64'">$(OutDir)\res</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug (Static)|x64'">$(OutDir)\res</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

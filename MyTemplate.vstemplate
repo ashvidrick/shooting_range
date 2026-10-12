@@ -1,0 +1,396 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <!-- Assembly by LIS -->
+    <Name>C++ SFML v3.1.0</Name>
+    <Description>Create a C++17 SFML3 project for Windows OS (MSVC x86/x64)</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>SFML3_Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>SFMLIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="SFML3.vcxproj" File="SFML310.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">SFML310.vcxproj.filters</ProjectItem>
+      <!-- code example -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">SOURCE\main.cpp</ProjectItem>
+      <!-- SFML headers -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="Audio.hpp">INCLUDE\SFML\Audio.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Config.hpp">INCLUDE\SFML\Config.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="GpuPreference.hpp">INCLUDE\SFML\GpuPreference.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Graphics.hpp">INCLUDE\SFML\Graphics.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Main.hpp">INCLUDE\SFML\Main.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Network.hpp">INCLUDE\SFML\Network.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="OpenGL.hpp">INCLUDE\SFML\OpenGL.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="System.hpp">INCLUDE\SFML\System.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Window.hpp">INCLUDE\SFML\Window.hpp</ProjectItem>
+      <!-- SFML3 Audio -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="AudioResource.hpp">INCLUDE\SFML\AUDIO\AudioResource.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Export.hpp">INCLUDE\SFML\AUDIO\Export.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="InputSoundFile.hpp">INCLUDE\SFML\AUDIO\InputSoundFile.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Listener.hpp">INCLUDE\SFML\AUDIO\Listener.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Music.hpp">INCLUDE\SFML\AUDIO\Music.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="OutputSoundFile.hpp">INCLUDE\SFML\AUDIO\OutputSoundFile.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="PlaybackDevice.hpp">INCLUDE\SFML\AUDIO\PlaybackDevice.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Sound.hpp">INCLUDE\SFML\AUDIO\Sound.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundBuffer.hpp">INCLUDE\SFML\AUDIO\SoundBuffer.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundBufferRecorder.hpp">INCLUDE\SFML\AUDIO\SoundBufferRecorder.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundChannel.hpp">INCLUDE\SFML\AUDIO\SoundChannel.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundFileFactory.hpp">INCLUDE\SFML\AUDIO\SoundFileFactory.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundFileFactory.inl">INCLUDE\SFML\AUDIO\SoundFileFactory.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundFileReader.hpp">INCLUDE\SFML\AUDIO\SoundFileReader.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundFileWriter.hpp">INCLUDE\SFML\AUDIO\SoundFileWriter.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundRecorder.hpp">INCLUDE\SFML\AUDIO\SoundRecorder.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundSource.hpp">INCLUDE\SFML\AUDIO\SoundSource.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SoundStream.hpp">INCLUDE\SFML\AUDIO\SoundStream.hpp</ProjectItem>
+      <!-- SFML3 Graphics -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="BlendMode.hpp">INCLUDE\SFML\GRAPHICS\BlendMode.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="CircleShape.hpp">INCLUDE\SFML\GRAPHICS\CircleShape.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Color.hpp">INCLUDE\SFML\GRAPHICS\Color.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Color.inl">INCLUDE\SFML\GRAPHICS\Color.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ConvexShape.hpp">INCLUDE\SFML\GRAPHICS\ConvexShape.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="CoordinateType.hpp">INCLUDE\SFML\GRAPHICS\CoordinateType.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Drawable.hpp">INCLUDE\SFML\GRAPHICS\Drawable.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Export.hpp">INCLUDE\SFML\GRAPHICS\Export.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Font.hpp">INCLUDE\SFML\GRAPHICS\Font.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Glsl.hpp">INCLUDE\SFML\GRAPHICS\Glsl.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Glsl.inl">INCLUDE\SFML\GRAPHICS\Glsl.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Glyph.hpp">INCLUDE\SFML\GRAPHICS\Glyph.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Image.hpp">INCLUDE\SFML\GRAPHICS\Image.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="PrimitiveType.hpp">INCLUDE\SFML\GRAPHICS\PrimitiveType.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Rect.hpp">INCLUDE\SFML\GRAPHICS\Rect.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Rect.inl">INCLUDE\SFML\GRAPHICS\Rect.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="RectangleShape.hpp">INCLUDE\SFML\GRAPHICS\RectangleShape.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="RenderStates.hpp">INCLUDE\SFML\GRAPHICS\RenderStates.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="RenderTarget.hpp">INCLUDE\SFML\GRAPHICS\RenderTarget.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="RenderTexture.hpp">INCLUDE\SFML\GRAPHICS\RenderTexture.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="RenderWindow.hpp">INCLUDE\SFML\GRAPHICS\RenderWindow.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Shader.hpp">INCLUDE\SFML\GRAPHICS\Shader.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Shape.hpp">INCLUDE\SFML\GRAPHICS\Shape.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Sprite.hpp">INCLUDE\SFML\GRAPHICS\Sprite.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="StencilMode.hpp">INCLUDE\SFML\GRAPHICS\StencilMode.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Text.hpp">INCLUDE\SFML\GRAPHICS\Text.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Texture.hpp">INCLUDE\SFML\GRAPHICS\Texture.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Transform.hpp">INCLUDE\SFML\GRAPHICS\Transform.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Transform.inl">INCLUDE\SFML\GRAPHICS\Transform.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Transformable.hpp">INCLUDE\SFML\GRAPHICS\Transformable.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Vertex.hpp">INCLUDE\SFML\GRAPHICS\Vertex.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="VertexArray.hpp">INCLUDE\SFML\GRAPHICS\VertexArray.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="VertexBuffer.hpp">INCLUDE\SFML\GRAPHICS\VertexBuffer.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="View.hpp">INCLUDE\SFML\GRAPHICS\View.hpp</ProjectItem>
+      <!-- SFML3 Metwork -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="Export.hpp">INCLUDE\SFML\NETWORK\Export.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Ftp.hpp">INCLUDE\SFML\NETWORK\Ftp.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Http.hpp">INCLUDE\SFML\NETWORK\Http.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="IpAddress.hpp">INCLUDE\SFML\NETWORK\IpAddress.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Packet.hpp">INCLUDE\SFML\NETWORK\Packet.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Socket.hpp">INCLUDE\SFML\NETWORK\Socket.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SocketHandle.hpp">INCLUDE\SFML\NETWORK\SocketHandle.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SocketSelector.hpp">INCLUDE\SFML\NETWORK\SocketSelector.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="TcpListener.hpp">INCLUDE\SFML\NETWORK\TcpListener.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="TcpSocket.hpp">INCLUDE\SFML\NETWORK\TcpSocket.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="UdpSocket.hpp">INCLUDE\SFML\NETWORK\UdpSocket.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Dns.hpp">INCLUDE\SFML\Network\Dns.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Sftp.hpp">INCLUDE\SFML\Network\Sftp.hpp</ProjectItem>
+      <!-- SFML3 System -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="Angle.hpp">INCLUDE\SFML\SYSTEM\Angle.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Angle.inl">INCLUDE\SFML\SYSTEM\Angle.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Clock.hpp">INCLUDE\SFML\SYSTEM\Clock.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Err.hpp">INCLUDE\SFML\SYSTEM\Err.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Exception.hpp">INCLUDE\SFML\SYSTEM\Exception.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Export.hpp">INCLUDE\SFML\SYSTEM\Export.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="FileInputStream.hpp">INCLUDE\SFML\SYSTEM\FileInputStream.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="InputStream.hpp">INCLUDE\SFML\SYSTEM\InputStream.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="MemoryInputStream.hpp">INCLUDE\SFML\SYSTEM\MemoryInputStream.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="NativeActivity.hpp">INCLUDE\SFML\SYSTEM\NativeActivity.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Sleep.hpp">INCLUDE\SFML\SYSTEM\Sleep.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="String.hpp">INCLUDE\SFML\SYSTEM\String.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="String.inl">INCLUDE\SFML\SYSTEM\String.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SuspendAwareClock.hpp">INCLUDE\SFML\SYSTEM\SuspendAwareClock.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Time.hpp">INCLUDE\SFML\SYSTEM\Time.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Time.inl">INCLUDE\SFML\SYSTEM\Time.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Utf.hpp">INCLUDE\SFML\SYSTEM\Utf.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Utf.inl">INCLUDE\SFML\SYSTEM\Utf.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Vector2.hpp">INCLUDE\SFML\SYSTEM\Vector2.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Vector2.inl">INCLUDE\SFML\SYSTEM\Vector2.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Vector3.hpp">INCLUDE\SFML\SYSTEM\Vector3.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Vector3.inl">INCLUDE\SFML\SYSTEM\Vector3.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="TimeoutWithPredicate.hpp">INCLUDE\SFML\System\TimeoutWithPredicate.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Version.hpp">INCLUDE\SFML\System\Version.hpp</ProjectItem>
+      <!-- SFML3 Window -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="Clipboard.hpp">INCLUDE\SFML\WINDOW\Clipboard.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Context.hpp">INCLUDE\SFML\WINDOW\Context.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ContextSettings.hpp">INCLUDE\SFML\WINDOW\ContextSettings.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Cursor.hpp">INCLUDE\SFML\WINDOW\Cursor.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Event.hpp">INCLUDE\SFML\WINDOW\Event.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Event.inl">INCLUDE\SFML\WINDOW\Event.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Export.hpp">INCLUDE\SFML\WINDOW\Export.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="GlResource.hpp">INCLUDE\SFML\WINDOW\GlResource.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Joystick.hpp">INCLUDE\SFML\WINDOW\Joystick.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Keyboard.hpp">INCLUDE\SFML\WINDOW\Keyboard.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Mouse.hpp">INCLUDE\SFML\WINDOW\Mouse.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Sensor.hpp">INCLUDE\SFML\WINDOW\Sensor.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Touch.hpp">INCLUDE\SFML\WINDOW\Touch.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="VideoMode.hpp">INCLUDE\SFML\WINDOW\VideoMode.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Vulkan.hpp">INCLUDE\SFML\WINDOW\Vulkan.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Window.hpp">INCLUDE\SFML\WINDOW\Window.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="WindowBase.hpp">INCLUDE\SFML\WINDOW\WindowBase.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="WindowBase.inl">INCLUDE\SFML\WINDOW\WindowBase.inl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="WindowEnums.hpp">INCLUDE\SFML\WINDOW\WindowEnums.hpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="WindowHandle.hpp">INCLUDE\SFML\WINDOW\WindowHandle.hpp</ProjectItem>
+	  <!-- EXTRA Headers -->
+	  <ProjectItem ReplaceParameters="false" TargetFileName="libssh2.h">INCLUDE\libssh2.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="libssh2_publickey.h">INCLUDE\libssh2_publickey.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="libssh2_sftp.h">INCLUDE\libssh2_sftp.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="aes.h">INCLUDE\mbedtls\aes.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="aria.h">INCLUDE\mbedtls\aria.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="asn1.h">INCLUDE\mbedtls\asn1.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="asn1write.h">INCLUDE\mbedtls\asn1write.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="base64.h">INCLUDE\mbedtls\base64.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="bignum.h">INCLUDE\mbedtls\bignum.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="block_cipher.h">INCLUDE\mbedtls\block_cipher.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="build_info.h">INCLUDE\mbedtls\build_info.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="camellia.h">INCLUDE\mbedtls\camellia.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ccm.h">INCLUDE\mbedtls\ccm.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="chacha20.h">INCLUDE\mbedtls\chacha20.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="chachapoly.h">INCLUDE\mbedtls\chachapoly.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="check_config.h">INCLUDE\mbedtls\check_config.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="cipher.h">INCLUDE\mbedtls\cipher.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="cmac.h">INCLUDE\mbedtls\cmac.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="compat-2.x.h">INCLUDE\mbedtls\compat-2.x.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_adjust_legacy_crypto.h">INCLUDE\mbedtls\config_adjust_legacy_crypto.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_adjust_legacy_from_psa.h">INCLUDE\mbedtls\config_adjust_legacy_from_psa.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_adjust_psa_from_legacy.h">INCLUDE\mbedtls\config_adjust_psa_from_legacy.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_adjust_psa_superset_legacy.h">INCLUDE\mbedtls\config_adjust_psa_superset_legacy.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_adjust_ssl.h">INCLUDE\mbedtls\config_adjust_ssl.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_adjust_x509.h">INCLUDE\mbedtls\config_adjust_x509.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="config_psa.h">INCLUDE\mbedtls\config_psa.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="constant_time.h">INCLUDE\mbedtls\constant_time.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ctr_drbg.h">INCLUDE\mbedtls\ctr_drbg.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="debug.h">INCLUDE\mbedtls\debug.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="des.h">INCLUDE\mbedtls\des.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="dhm.h">INCLUDE\mbedtls\dhm.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ecdh.h">INCLUDE\mbedtls\ecdh.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ecdsa.h">INCLUDE\mbedtls\ecdsa.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ecjpake.h">INCLUDE\mbedtls\ecjpake.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ecp.h">INCLUDE\mbedtls\ecp.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="entropy.h">INCLUDE\mbedtls\entropy.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="error.h">INCLUDE\mbedtls\error.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="gcm.h">INCLUDE\mbedtls\gcm.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="hkdf.h">INCLUDE\mbedtls\hkdf.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="hmac_drbg.h">INCLUDE\mbedtls\hmac_drbg.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="lms.h">INCLUDE\mbedtls\lms.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="mbedtls_config.h">INCLUDE\mbedtls\mbedtls_config.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="md.h">INCLUDE\mbedtls\md.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="md5.h">INCLUDE\mbedtls\md5.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="memory_buffer_alloc.h">INCLUDE\mbedtls\memory_buffer_alloc.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="net_sockets.h">INCLUDE\mbedtls\net_sockets.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="nist_kw.h">INCLUDE\mbedtls\nist_kw.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="oid.h">INCLUDE\mbedtls\oid.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="pem.h">INCLUDE\mbedtls\pem.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="pk.h">INCLUDE\mbedtls\pk.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="pkcs12.h">INCLUDE\mbedtls\pkcs12.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="pkcs5.h">INCLUDE\mbedtls\pkcs5.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="pkcs7.h">INCLUDE\mbedtls\pkcs7.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="platform.h">INCLUDE\mbedtls\platform.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="platform_time.h">INCLUDE\mbedtls\platform_time.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="platform_util.h">INCLUDE\mbedtls\platform_util.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="poly1305.h">INCLUDE\mbedtls\poly1305.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="private_access.h">INCLUDE\mbedtls\private_access.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="psa_util.h">INCLUDE\mbedtls\psa_util.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ripemd160.h">INCLUDE\mbedtls\ripemd160.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="rsa.h">INCLUDE\mbedtls\rsa.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="sha1.h">INCLUDE\mbedtls\sha1.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="sha256.h">INCLUDE\mbedtls\sha256.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="sha3.h">INCLUDE\mbedtls\sha3.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="sha512.h">INCLUDE\mbedtls\sha512.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ssl.h">INCLUDE\mbedtls\ssl.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ssl_cache.h">INCLUDE\mbedtls\ssl_cache.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ssl_ciphersuites.h">INCLUDE\mbedtls\ssl_ciphersuites.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ssl_cookie.h">INCLUDE\mbedtls\ssl_cookie.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="ssl_ticket.h">INCLUDE\mbedtls\ssl_ticket.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="threading.h">INCLUDE\mbedtls\threading.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="threading_alt.h">INCLUDE\mbedtls\threading_alt.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="timing.h">INCLUDE\mbedtls\timing.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="version.h">INCLUDE\mbedtls\version.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="x509.h">INCLUDE\mbedtls\x509.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="x509_crl.h">INCLUDE\mbedtls\x509_crl.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="x509_crt.h">INCLUDE\mbedtls\x509_crt.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="x509_csr.h">INCLUDE\mbedtls\x509_csr.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="build_info.h">INCLUDE\psa\build_info.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto.h">INCLUDE\psa\crypto.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_adjust_auto_enabled.h">INCLUDE\psa\crypto_adjust_auto_enabled.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_adjust_config_dependencies.h">INCLUDE\psa\crypto_adjust_config_dependencies.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_adjust_config_key_pair_types.h">INCLUDE\psa\crypto_adjust_config_key_pair_types.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_adjust_config_synonyms.h">INCLUDE\psa\crypto_adjust_config_synonyms.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_builtin_composites.h">INCLUDE\psa\crypto_builtin_composites.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_builtin_key_derivation.h">INCLUDE\psa\crypto_builtin_key_derivation.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_builtin_primitives.h">INCLUDE\psa\crypto_builtin_primitives.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_compat.h">INCLUDE\psa\crypto_compat.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_config.h">INCLUDE\psa\crypto_config.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_driver_common.h">INCLUDE\psa\crypto_driver_common.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_driver_contexts_composites.h">INCLUDE\psa\crypto_driver_contexts_composites.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_driver_contexts_key_derivation.h">INCLUDE\psa\crypto_driver_contexts_key_derivation.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_driver_contexts_primitives.h">INCLUDE\psa\crypto_driver_contexts_primitives.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_extra.h">INCLUDE\psa\crypto_extra.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_legacy.h">INCLUDE\psa\crypto_legacy.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_platform.h">INCLUDE\psa\crypto_platform.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_se_driver.h">INCLUDE\psa\crypto_se_driver.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_sizes.h">INCLUDE\psa\crypto_sizes.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_struct.h">INCLUDE\psa\crypto_struct.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_types.h">INCLUDE\psa\crypto_types.h</ProjectItem>
+	  <ProjectItem ReplaceParameters="false" TargetFileName="crypto_values.h">INCLUDE\psa\crypto_values.h</ProjectItem>
+      <!-- Extra libraries -->
+      <!-- x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="flac.lib">LIB\x64\flac.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="flacd.lib">LIB\x64\flacd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="freetype.lib">LIB\x64\freetype.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="freetyped.lib">LIB\x64\freetyped.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ogg.lib">LIB\x64\ogg.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="oggd.lib">LIB\x64\oggd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbis.lib">LIB\x64\vorbis.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisd.lib">LIB\x64\vorbisd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisenc.lib">LIB\x64\vorbisenc.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisencd.lib">LIB\x64\vorbisencd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisfile.lib">LIB\x64\vorbisfile.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisfiled.lib">LIB\x64\vorbisfiled.lib</ProjectItem>
+      <!-- Extra 310 x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="harfbuzz.lib">LIB\x64\harfbuzz.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="harfbuzzd.lib">LIB\x64\harfbuzzd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="libssh2.lib">LIB\x64\libssh2.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedcrypto.lib">LIB\x64\mbedcrypto.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedcryptod.lib">LIB\x64\mbedcryptod.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedtls.lib">LIB\x64\mbedtls.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedtlsd.lib">LIB\x64\mbedtlsd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedx509.lib">LIB\x64\mbedx509.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedx509d.lib">LIB\x64\mbedx509d.lib</ProjectItem>
+      <!-- x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="flac.lib">LIB\x86\flac.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="flacd.lib">LIB\x86\flacd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="freetype.lib">LIB\x86\freetype.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="freetyped.lib">LIB\x86\freetyped.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ogg.lib">LIB\x86\ogg.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="oggd.lib">LIB\x86\oggd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbis.lib">LIB\x86\vorbis.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisd.lib">LIB\x86\vorbisd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisenc.lib">LIB\x86\vorbisenc.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisencd.lib">LIB\x86\vorbisencd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisfile.lib">LIB\x86\vorbisfile.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="vorbisfiled.lib">LIB\x86\vorbisfiled.lib</ProjectItem>
+      <!-- Extra 310 x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="harfbuzz.lib">LIB\x86\harfbuzz.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="harfbuzzd.lib">LIB\x86\harfbuzzd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="libssh2.lib">LIB\x86\libssh2.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedcrypto.lib">LIB\x86\mbedcrypto.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedcryptod.lib">LIB\x86\mbedcryptod.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedtls.lib">LIB\x86\mbedtls.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedtlsd.lib">LIB\x86\mbedtlsd.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedx509.lib">LIB\x86\mbedx509.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mbedx509d.lib">LIB\x86\mbedx509d.lib</ProjectItem>
+      <!-- LIB's -->
+      <!-- SFML3 x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-d.lib">LIB\x64\sfml-audio-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-s-d.lib">LIB\x64\sfml-audio-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-s.lib">LIB\x64\sfml-audio-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio.lib">LIB\x64\sfml-audio.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-d.lib">LIB\x64\sfml-graphics-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-s-d.lib">LIB\x64\sfml-graphics-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-s.lib">LIB\x64\sfml-graphics-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics.lib">LIB\x64\sfml-graphics.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-main-d.lib">LIB\x64\sfml-main-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-main.lib">LIB\x64\sfml-main.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-d.lib">LIB\x64\sfml-network-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-s-d.lib">LIB\x64\sfml-network-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-s.lib">LIB\x64\sfml-network-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network.lib">LIB\x64\sfml-network.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-d.lib">LIB\x64\sfml-system-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-s-d.lib">LIB\x64\sfml-system-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-s.lib">LIB\x64\sfml-system-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system.lib">LIB\x64\sfml-system.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-d.lib">LIB\x64\sfml-window-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-s-d.lib">LIB\x64\sfml-window-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-s.lib">LIB\x64\sfml-window-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window.lib">LIB\x64\sfml-window.lib</ProjectItem>
+      <!-- SFML3 x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-d.lib">LIB\x86\sfml-audio-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-s-d.lib">LIB\x86\sfml-audio-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-s.lib">LIB\x86\sfml-audio-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio.lib">LIB\x86\sfml-audio.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-d.lib">LIB\x86\sfml-graphics-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-s-d.lib">LIB\x86\sfml-graphics-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-s.lib">LIB\x86\sfml-graphics-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics.lib">LIB\x86\sfml-graphics.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-main-d.lib">LIB\x86\sfml-main-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-main.lib">LIB\x86\sfml-main.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-d.lib">LIB\x86\sfml-network-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-s-d.lib">LIB\x86\sfml-network-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-s.lib">LIB\x86\sfml-network-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network.lib">LIB\x86\sfml-network.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-d.lib">LIB\x86\sfml-system-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-s-d.lib">LIB\x86\sfml-system-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-s.lib">LIB\x86\sfml-system-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system.lib">LIB\x86\sfml-system.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-d.lib">LIB\x86\sfml-window-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-s-d.lib">LIB\x86\sfml-window-s-d.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-s.lib">LIB\x86\sfml-window-s.lib</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window.lib">LIB\x86\sfml-window.lib</ProjectItem>
+      <!-- PDB's -->
+      <!-- SFML3 dynamic debug x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-d.pdb">LIB\x64\sfml-audio-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-d.pdb">LIB\x64\sfml-graphics-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-main-d.pdb">LIB\x64\sfml-main-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-d.pdb">LIB\x64\sfml-network-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-d.pdb">LIB\x64\sfml-system-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-d.pdb">LIB\x64\sfml-window-d.pdb</ProjectItem>
+      <!-- SFML3 dynamic debug x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-d.pdb">LIB\x86\sfml-audio-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-d.pdb">LIB\x86\sfml-graphics-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-main-d.pdb">LIB\x86\sfml-main-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-d.pdb">LIB\x86\sfml-network-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-d.pdb">LIB\x86\sfml-system-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-d.pdb">LIB\x86\sfml-window-d.pdb</ProjectItem>
+      <!-- SFML3 static debug x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-s-d.pdb">LIB\x64\sfml-audio-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-s-d.pdb">LIB\x64\sfml-graphics-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-s-d.pdb">LIB\x64\sfml-network-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-s-d.pdb">LIB\x64\sfml-system-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-s-d.pdb">LIB\x64\sfml-window-s-d.pdb</ProjectItem>
+      <!-- SFML3 static debug x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-s-d.pdb">LIB\x86\sfml-audio-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-s-d.pdb">LIB\x86\sfml-graphics-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-s-d.pdb">LIB\x86\sfml-network-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-s-d.pdb">LIB\x86\sfml-system-s-d.pdb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-s-d.pdb">LIB\x86\sfml-window-s-d.pdb</ProjectItem>
+      <!-- DLL's -->
+      <!-- SFML3 release x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-3.dll">BIN\x64\sfml-audio-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-3.dll">BIN\x64\sfml-graphics-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-3.dll">BIN\x64\sfml-network-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-3.dll">BIN\x64\sfml-system-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-3.dll">BIN\x64\sfml-window-3.dll</ProjectItem>
+      <!-- SFML3 release x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-3.dll">BIN\x86\sfml-audio-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-3.dll">BIN\x86\sfml-graphics-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-3.dll">BIN\x86\sfml-network-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-3.dll">BIN\x86\sfml-system-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-3.dll">BIN\x86\sfml-window-3.dll</ProjectItem>
+      <!-- SFML3 debug x64 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-d-3.dll">BIN\x64\sfml-audio-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-d-3.dll">BIN\x64\sfml-graphics-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-d-3.dll">BIN\x64\sfml-network-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-d-3.dll">BIN\x64\sfml-system-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-d-3.dll">BIN\x64\sfml-window-d-3.dll</ProjectItem>
+      <!-- SFML3 debug x86 -->
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-audio-d-3.dll">BIN\x86\sfml-audio-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-graphics-d-3.dll">BIN\x86\sfml-graphics-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-network-d-3.dll">BIN\x86\sfml-network-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-system-d-3.dll">BIN\x86\sfml-system-d-3.dll</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="sfml-window-d-3.dll">BIN\x86\sfml-window-d-3.dll</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
